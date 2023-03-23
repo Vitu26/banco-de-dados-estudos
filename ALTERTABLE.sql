@@ -66,5 +66,12 @@ ALTER TABLE tb_advogado ADD CHECK (especialidade IN ('Constitucionalista', 'Trib
  -- DROP DATABASE ads_justica;
  
  -- Iniciando comandos DML(Insert);
- INSERT INTO TABELA(coluna1, coluna2, ...) VALUES (1, 'MARIA',...);
+-- INSERT INTO tabela(coluna1, coluna2, ...) VALUES (1, 'MARIA',...);
+INSERT INTO tb_advogado(oab, nome_completo, especialidade) VALUES (1, 'João', 'Penal');
+INSERT INTO tb_advogado VALUES (1, 'Maria', 'Constitucionalista');
+INSERT INTO tb_advogado(nome_completo, oab, especialidade) VALUES ('Sophia', 3, 'Penal');
+
+-- Para inserir valores de uma só vez
+INSERT INTO tb_advogado VALUES (6, 'Pedro', 'Penal'), (7, 'Roberto', 'Penal'), (8, 'Jacó', 'Penal'),(10, 'Damião', 'Penal');
+
  
