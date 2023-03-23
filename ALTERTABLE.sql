@@ -74,4 +74,4 @@ INSERT INTO tb_advogado(nome_completo, oab, especialidade) VALUES ('Sophia', 3, 
 -- Para inserir valores de uma só vez
 INSERT INTO tb_advogado VALUES (6, 'Pedro', 'Penal'), (7, 'Roberto', 'Penal'), (8, 'Jacó', 'Penal'),(10, 'Damião', 'Penal');
 
- 
+ SELECT * FROM tb_advogado;
