@@ -53,3 +53,18 @@ ALTER TABLE tb_advogado ADD CHECK (especialidade IN ('Constitucionalista', 'Trib
  ALTER TABLE tb_processo ADD FOREIGN KEY (oab) REFERENCES tb_advogado (oab);
  ALTER TABLE tb_processo ADD CONSTRAINT mds FOREIGN KEY (id) REFERENCES tb_justica (id);
  
+ ALTER TABLE tb_justica ADD COLUMN cidade VARCHAR(25);
+ 
+ -- apagando uma coluna de uma tabela
+ ALTER TABLE tb_justica DROP COLUMN cidade;
+ 
+ -- Apagar uma tabela por completo
+ -- DROP TABLE tb_advogado;
+ -- DROP TABLE tb_justica;
+ -- DROP TABLE tb_processo;
+ -- Apagar toda a base de vez
+ -- DROP DATABASE ads_justica;
+ 
+ -- Iniciando comandos DML(Insert);
+ INSERT INTO TABELA(coluna1, coluna2, ...) VALUES (1, 'MARIA',...);
+ 
